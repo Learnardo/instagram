@@ -40,6 +40,8 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
+        # Your code here! Send a request to the IFTTT link, with
+        # @post.photo.service_url as one of the parameters.
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
