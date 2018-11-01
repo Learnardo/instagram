@@ -243,6 +243,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-eventstream
   aws-sdk-s3
   bcrypt
   bootsnap (>= 1.1.0)
